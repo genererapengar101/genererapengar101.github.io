@@ -65,8 +65,11 @@
 
         .center {
             text-align: center;
+            align-items: center;
             margin: auto;
             margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
         }
         .avatar img {
             width: 100%;
@@ -93,30 +96,44 @@
             word-break: break-word;
         }
 
-        .item {
-            margin: 18px auto;
-            color: #ffffff;
-            border: 3px solid black;
-            min-height: 55px;
-            line-height: 55px;
-            background-color:#000000;
-            border-color:#000000;
-            position: relative;
-            padding-top: 5px;
+        .links {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .link.btn {
             min-height: 50px;
             max-width: 500px;
+            border: 3px solid black;
+            background-color:#000000;
+            border-color:#000000;
+            margin: 18px auto;
+            min-height: 55px;
+            line-height: 55px;
+            position: relative;
+            padding-top: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 100%;
             line-height: 50px;
+            color: #ffffff;
         }
-        
-        .item:hover {
+
+        .link.btn:hover {
             background-color: #fff;
             color: black;
             border-color: #7ED957;
         }
 
-        .link {
+
+        .link.btn a {
+            color: inherit;
             text-decoration: none;
         }
+        
+
+        
 
     </style>
 </head>
@@ -136,18 +153,54 @@
                     </div>
                 </div>
             </div>
-
-            <div>
-            <a href="https://www.instagram.com/genererapengar101/"
-                class="btn link">
-                    <div class="item">
-                        Instagram
-                    </div>
-                </a>
+            <div class="links">
+                <div class="btn link">
+                    <a href="https://track.adtraction.com/t/t?a=1112171655&as=1572937393&t=2&tk=1">
+                        <div class="item">
+                            Kameo - Investera i företagslån och 
+                            få månatliga ränteinkomster på 5-15%!
+                        </div>
+                    </a>
+                </div>
+                <div class="btn link">
+                    <a href="https://track.adtraction.com/t/t?a=1498246945&as=1572937393&t=2&tk=1">
+                        <div class="item">
+                            Lunar SE - Få enkel översikt över dina utgifter helt gratis!
+                        </div>
+                    </a>
+                </div>
+                <div class="btn link">
+                    <a href="https://click.adrecord.com/?c=43712&p=1062" >
+                        <div class="item">
+                            SAVR - Fondrebell med lägst fondavgifter 
+                        </div>
+                    </a>
+                </div>
+                <div class="btn link">
+                    <a href="https://click.adrecord.com/?c=43712&p=120">
+                        <div class="item">
+                            Adrecord -TJÄNA pengar på din Instagram, blogg eller hemsida 
+                        </div>
+                    </a>
+                </div>
+                <div class="btn link">
+                    <a href="https://click.adrecord.com/?c=43712&p=836">
+                        <div class="item">
+                            Avanza - Börja investera på börsen! 
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
+    <script type="text/javascript">
+        (function() {
+            var cl = document.createElement('script'); cl.type = 'text/javascript'; cl.async = true;
+            cl.src = document.location.protocol + '//www.adrecord.com/cl.php?u=25518&ref=' + escape(document.location.href);
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cl, s);
+        })();
+    </script>
 
 </body>
 
